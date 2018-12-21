@@ -1,6 +1,6 @@
 package cli
 
-import "github.com/gpmgo/gopm/modules/cli"
+import "github.com/urfave/cli"
 
 func CreateApp() {
 	mApp := cli.NewApp() //实例一个对象

@@ -54,3 +54,7 @@ c.AddFunc("@every 1m", func() {
 
 # 实例
 - [实例](simple.go)
+
+# 源码解析
+
+[源码解析](https://blog.csdn.net/cchd0001/article/details/51076922)
