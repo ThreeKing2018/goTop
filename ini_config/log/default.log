@@ -1,0 +1,22 @@
+2019-01-19T15:28:46.378+0800	PANIC	ini_config/ini.go:29		{"get Name": "Option not found: name"}
+github.com/ThreeKing2018/k3log/plugins/zaplog.(*Log).Panic
+	/Users/wangzl/go-work/src/github.com/ThreeKing2018/k3log/plugins/zaplog/zaplog.go:140
+github.com/ThreeKing2018/k3log.Panic
+	/Users/wangzl/go-work/src/github.com/ThreeKing2018/k3log/init.go:59
+github.com/ThreeKing2018/goTop/ini_config.GetIntro
+	/Users/wangzl/go-work/src/github.com/ThreeKing2018/goTop/ini_config/ini.go:29
+github.com/ThreeKing2018/goTop/ini_config.TestGetIntro
+	/Users/wangzl/go-work/src/github.com/ThreeKing2018/goTop/ini_config/ini_test.go:6
+testing.tRunner
+	/usr/local/Cellar/go/1.10.3/libexec/src/testing/testing.go:777
+2019-01-19T15:29:30.804+0800	PANIC	ini_config/ini.go:29		{"get intro": "Option not found: name"}
+github.com/ThreeKing2018/k3log/plugins/zaplog.(*Log).Panic
+	/Users/wangzl/go-work/src/github.com/ThreeKing2018/k3log/plugins/zaplog/zaplog.go:140
+github.com/ThreeKing2018/k3log.Panic
+	/Users/wangzl/go-work/src/github.com/ThreeKing2018/k3log/init.go:59
+github.com/ThreeKing2018/goTop/ini_config.GetIntro
+	/Users/wangzl/go-work/src/github.com/ThreeKing2018/goTop/ini_config/ini.go:29
+github.com/ThreeKing2018/goTop/ini_config.TestGetIntro
+	/Users/wangzl/go-work/src/github.com/ThreeKing2018/goTop/ini_config/ini_test.go:6
+testing.tRunner
+	/usr/local/Cellar/go/1.10.3/libexec/src/testing/testing.go:777

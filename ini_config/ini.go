@@ -6,7 +6,7 @@ import (
 	"fmt"
 )
 
-func GetInstro() {
+func GetIntro() {
 	//读取文件路径
 	cfg, err := config.ReadDefault("config.ini")
 	if err != nil {
@@ -23,4 +23,10 @@ func GetInstro() {
 		k3log.Panic("get Name", err)
 	}
 	fmt.Println(info)
+
+	intro , err := cfg.String("threeKing", "intro")
+	if err != nil {
+		k3log.Panic("get intro", err)
+	}
+	fmt.Println(intro)
 }
