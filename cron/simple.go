@@ -1,17 +1,16 @@
 package cron
 
 import (
-	"github.com/robfig/cron"
 	"fmt"
-	"github.com/yezihack/gotime"
 	"github.com/ThreeKing2018/goutil/choke"
+	"github.com/robfig/cron"
+	"github.com/yezihack/gotime"
 )
-
 
 func AddCron() {
 	c := cron.New()
 	c.Start()
-	defer  c.Stop()
+	defer c.Stop()
 	c.AddFunc("* * * * * *", func() {
 		fmt.Println(gotime.New().Now())
 	})
