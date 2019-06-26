@@ -54,3 +54,18 @@ func FileExists(t TestingT, path string, msgAndArgs ...interface{}) bool
 //判断目录是否存在
 func DirExists(t TestingT, path string, msgAndArgs ...interface{}) bool
 ```
+
+## 实例
+```
+func TestAdd(t *testing.T) {
+	a := 10
+	b := 20
+	ret := Add(a, b)
+	assert.Equal(t, ret, 30, "等于30") //判断ret与30是否相等, 如果不相等,则会报错
+
+	a = 1
+	b = 1
+	ret = Add(a, b)
+	assert.NotEqual(t, ret, 3) //判断ret与3是否不相等, 如果成立则OK, 反之
+}
+```
