@@ -1,9 +1,10 @@
 package ini_config
 
 import (
-	"github.com/robfig/config"
-	"github.com/ThreeKing2018/k3log"
 	"fmt"
+
+	"github.com/ThreeKing2018/k3log"
+	"github.com/robfig/config"
 )
 
 func GetIntro() {
@@ -13,18 +14,18 @@ func GetIntro() {
 		k3log.Panic("config read file", err)
 	}
 	//获取[节点] 节点
-	name , err := cfg.String("threeKing", "name")
+	name, err := cfg.String("threeKing", "name")
 	if err != nil {
 		k3log.Panic("get Name", err)
 	}
 	fmt.Println(name)
-	info , err := cfg.String("threeKing", "info")
+	info, err := cfg.String("threeKing", "info")
 	if err != nil {
 		k3log.Panic("get Name", err)
 	}
 	fmt.Println(info)
 
-	intro , err := cfg.String("threeKing", "intro")
+	intro, err := cfg.String("threeKing", "intro")
 	if err != nil {
 		k3log.Panic("get intro", err)
 	}
